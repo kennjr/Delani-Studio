@@ -48,5 +48,21 @@ body, html{
     padding-top: 40px;
 }
 
+.services_section{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background: url('/home/kenny/moringaprojects/delani_studio/images/s_image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 
 
