@@ -65,4 +65,42 @@ body, html{
     align-items: center;
 }
 
+.what_we_do_section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+
+}
+
+.what_we_do_section > h2{
+    padding-right: 0px;
+}
+
+#product_management_img, #development_img, #design_img {
+    display: none;
+}
+
+.what_we_do_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.design{
+    flex: 1;
+}
+
+.development{
+    flex: 1;
+}
+
+.product_management{
+    flex: 1;
+}
+
 
