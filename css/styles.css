@@ -112,4 +112,33 @@ body, html{
     padding-left: 50px;
 }
 
+.portfolio_section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
 
+.portfolio_images {
+    display: flex;
+    text-align: center;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+.portfolio_project_img > img{
+    width: 80%;
+    height: 80%;
+    border-radius: 2.5px;
+}
+
+.portfolio_project_img > p{
+    display: none;
+}
