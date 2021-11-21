@@ -46,7 +46,7 @@
                         <p>DESIGN</p>
                     </div>
                     <div id="design_details">
-                        <p>DESIGN<br></p>
+                        <p class="details_header">DESIGN<br></p>
                         <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.</p>
                         <p>Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
                     </div>
@@ -57,7 +57,7 @@
                         <p>DEVELOPMENT</p>
                     </div>
                     <div id="development_details">
-                        <p>DEVELOPMENT</p>
+                        <p class="details_header">DEVELOPMENT</p>
                         <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.</p>
                         <p>They collaborate with your team to write and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
                     </div>
@@ -68,7 +68,7 @@
                         <p>PRODUCT MANAGEMENT</p>
                     </div>
                     <div id="product_management_details">
-                        <p>PRODUCT MANAGEMENT</p>
+                        <p class="details_header">PRODUCT MANAGEMENT</p>
                         <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.</p>
                         <p>This iterative process allows for changes as business requirements above.</p>
                     </div>
@@ -79,51 +79,59 @@
         <div class="portfolio_section">
             <p><strong>PORTFOLIO</strong></p>
             <div class="portfolio_images" id="portfolio_images_row_1">
-                <div class="portfolio_project_img">
-                    <img src="images/work4.jpg" alt="Project 1" id="portfolio_project_img_1">
-                    <div id="overlay1">BLACK STUDIO</div>
+                <div class="sub_row_1">
+                    <div class="portfolio_project_img">
+                        <img src="images/work4.jpg" alt="Project 1" id="portfolio_project_img_1">
+                        <div id="overlay1">BLACK STUDIO</div>
+                    </div>
+                    <div class="portfolio_project_img">
+                        <img src="images/work3.jpg" alt="Project 2" id="portfolio_project_img_2">
+                        <div id="overlay2" class="text">ONTARIO SECURITY</div>
+                    </div>
                 </div>
-                <div class="portfolio_project_img">
-                    <img src="images/work3.jpg" alt="Project 2" id="portfolio_project_img_2">
-                    <div id="overlay2" class="text">ONTARIO SECURITY</div>
-                </div>
-                <div class="portfolio_project_img">
-                    <img src="images/work2.jpg" alt="Project 3" id="portfolio_project_img_3">
-                    <div id="overlay3"class="text">PYRAMIDS</div>
-                </div>
-                <div class="portfolio_project_img">
-                    <img src="images/work1.jpg" alt="Project 4" id="portfolio_project_img_4">
-                    <div id="overlay4" class="text">JIM CARRY</div>
+                <div class="sub_row_2">
+                    <div class="portfolio_project_img">
+                        <img src="images/work2.jpg" alt="Project 3" id="portfolio_project_img_3">
+                        <div id="overlay3"class="text">PYRAMIDS</div>
+                    </div>
+                    <div class="portfolio_project_img">
+                        <img src="images/work1.jpg" alt="Project 4" id="portfolio_project_img_4">
+                        <div id="overlay4" class="text">JIM CARRY</div>
+                    </div>
                 </div>
             </div>
             <div class="portfolio_images" id="portfolio_images_row_2">
-                <div class="portfolio_project_img">
-                    <img src="images/work5.jpg" alt="Project 5" id="portfolio_project_img_5">
-                    <div id="overlay5">HAVE A<br>GOOD DAY</div>
+                <div class="sub_row_1">
+                    <div class="portfolio_project_img">
+                        <img src="images/work5.jpg" alt="Project 5" id="portfolio_project_img_5">
+                        <div id="overlay5">HAVE A<br>GOOD DAY</div>
+                    </div>
+                    <div class="portfolio_project_img">
+                        <img src="images/work6.jpg" alt="Project 6" id="portfolio_project_img_6">
+                        <div id="overlay6">CALCULATOR</div>
+                    </div>
                 </div>
-                <div class="portfolio_project_img">
-                    <img src="images/work6.jpg" alt="Project 6" id="portfolio_project_img_6">
-                    <div id="overlay6">CALCULATOR</div>
-                </div>
-                <div class="portfolio_project_img">
-                    <img src="images/work7.jpg" alt="Project 7" id="portfolio_project_img_7">
-                    <div id="overlay7">BURNED</div>
-                </div>
-                <div class="portfolio_project_img">
-                    <img src="images/work8.jpg" alt="Project 8" id="portfolio_project_img_8">
-                    <div id="overlay8">BAILEY<br>WONGER</div>
+                <div class="sub_row_2">
+                    <div class="portfolio_project_img">
+                        <img src="images/work7.jpg" alt="Project 7" id="portfolio_project_img_7">
+                        <div id="overlay7">BURNED</div>
+                    </div>
+                    <div class="portfolio_project_img">
+                        <img src="images/work8.jpg" alt="Project 8" id="portfolio_project_img_8">
+                        <div id="overlay8">BAILEY<br>WONGER</div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="contact_us_section">
             <p><strong>CONTACT US</strong></p>
-            <form id="form" action="http://eepurl.com/hBX7ir" method="">
+            <form id="form" method="">
                 <div class="form-group form-inline">
-                  <input type="text" class="form-control" placeholder = "Name...." name="MERGE1" id="MERGE1" size="25" value="">
-                  <input type="email" class="form-control"  placeholder = "Email...." autocapitalize="off" autocorrect="off" name="MERGE2" id="MERGE2" size="25" value="">
+                  <input type="text" class="form-control" placeholder = "Name...." name="name_edt" id="name_edt" size="25" value="">
+                  <input type="email" class="form-control"  placeholder = "Email...." autocapitalize="off" autocorrect="off" name="email_edt" id="email_edt" size="25" value="">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" rows="8" id="comment" placeholder = "Your message here...."></textarea>
+                  <textarea class="form-control" rows="8" id="comment_edt" placeholder = "Your message here...."></textarea>
                 </div>
                 <button type="submit" class="submit_btn">Submit</button>
             </form>
