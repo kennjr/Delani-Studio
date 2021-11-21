@@ -1,5 +1,10 @@
-$(document).ready(() => {
+// Constant values
+const submitBtn = document.querySelector(".submit_btn");
+const nameEdt = document.getElementById("name_edt");
+const emailEdt = document.getElementById("email_edt");
+const commentEdt = document.getElementById("comment_edt");
 
+$(document).ready(() => {
     $(".design").click(() => {
         toggleElementVisibility("design_img");
         toggleElementVisibility("design_details");
@@ -23,6 +28,27 @@ $(document).ready(() => {
     addHoverEffect("6");
     addHoverEffect("7");
     addHoverEffect("8");
+
+    $('form').submit(function(e) {
+        var username = $("#name_edt").val();
+        var useremail = $("#email_edt").val();
+        var feedback_text = $("#comment_edt").val();
+
+        // Check whether the any field is empty
+        if (username.trim() == ""){
+            alert("The name field is empty");
+        }
+        else if(useremail.trim() == ""){
+            alert("The email field is empty");
+        }
+        else if(feedback_text.trim() == ""){
+            alert("The message field is empty");
+        }
+        else{
+            alert(`${username} we have received your message. Thank you fro reaching out to us.`)
+        }
+        e.preventDefault();
+    });
 })
 
 // This fun will toggle the visibility of the element, should be called when an element has been clicked
@@ -38,4 +64,32 @@ var addHoverEffect = (imageNum) => {
     }, function(){
         overlayText.style.visibility = "hidden";
     })
+}
+
+var buttonOnclick = (button) => {
+    button.addEventListener("click", () => {
+        getUserFeedback();
+        Event.preventDefault()
+    })
+}
+
+// This is the fun that'll get us the text the user typed in 
+var getUserFeedback = () => {
+    var username = $("#name_edt").val();
+    var useremail = $("#email_edt").val();
+    var feedback_text = $("#comment_edt").val();
+
+    // Check whether the any field is empty
+    if (username.trim() == ""){
+        alert("The name field is empty");
+    }
+    else if(useremail.trim() == ""){
+        alert("The email field is empty");
+    }
+    else if(feedback_text.trim() == ""){
+        alert("The message field is empty");
+    }
+    else{
+        alert(`${username} we have received your message. Thank you fro reaching out to us.`)
+    }
 }
