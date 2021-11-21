@@ -5,6 +5,8 @@ const emailEdt = document.getElementById("email_edt");
 const commentEdt = document.getElementById("comment_edt");
 
 $(document).ready(() => {
+
+    $(".details_header").css("font-weight","Bold");
     $(".design").click(() => {
         toggleElementVisibility("design_img");
         toggleElementVisibility("design_details");
