@@ -70,11 +70,10 @@ body, html{
     text-align: center;
     flex-direction: column;
     font-size: 18px;
-
 }
 
 .what_we_do_section > h2{
-    padding-right: 0px;
+    margin: 40px;
 }
 
 #product_management_details, #development_details, #design_details {
@@ -133,6 +132,26 @@ body, html{
     font-size: 18px;
 }
 
+.sub_row_1{
+    display: flex;
+    text-align: center;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+.sub_row_2{
+    display: flex;
+    text-align: center;
+    flex-direction: row;   
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
 .portfolio_project_img > img{
     
     width: 80%;
@@ -144,6 +163,39 @@ body, html{
 #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8{
     visibility: hidden;
     text-align: center;
+}
+
+@media screen 
+  and (min-width: 360px) 
+  and (max-width: 640px) {
+    .what_we_do_items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .sub_row_1{
+        display: flex;
+        text-align: center;
+        flex-direction: column;   
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 18px;
+    }
+    
+    .sub_row_2{
+        display: flex;
+        text-align: center;
+        flex-direction: column;   
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-size: 18px;
+    }
 }
 
 
@@ -161,7 +213,7 @@ body, html{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    margin: -5px;
+    margin: -1px;
 }
 
 .contact_us_section > p {
@@ -169,13 +221,13 @@ body, html{
     font-size: x-large;
 }
 
-input[type=text],input[type=email],#comment{
+#email_edt, #name_edt, #comment_edt{
     background: transparent;
     color: white;
     font-size: 20px;
 }
 
-#MERGE1{
+#name_edt{
     width: 35vw;
     margin-top: 10px;
     margin-left: 20px;
@@ -183,7 +235,7 @@ input[type=text],input[type=email],#comment{
     margin-bottom: 20px;
     padding: 5px;
 }
-#MERGE2{
+#email_edt{
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -191,7 +243,7 @@ input[type=text],input[type=email],#comment{
     padding: 5px;
     width: 35vw;
 }
-#comment{
+#comment_edt{
     margin: 20px;
     width: 80vw;
     padding: 10px;
