@@ -134,14 +134,18 @@ body, html{
 }
 
 .portfolio_project_img > img{
+    
     width: 80%;
     height: 80%;
     border-radius: 2.5px;
+    position: relative;
 }
 
-.portfolio_project_img > p{
-    display: none;
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, #overlay8{
+    visibility: hidden;
+    text-align: center;
 }
+
 
 .contact_us_section{
     background: url("../images/c_image.jpg");
@@ -169,7 +173,6 @@ input[type=text],input[type=email],#comment{
     background: transparent;
     color: white;
     font-size: 20px;
-    
 }
 
 #MERGE1{
