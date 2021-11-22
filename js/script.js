@@ -22,14 +22,14 @@ $(document).ready(() => {
         toggleElementVisibility("product_management_details");
     });
 
-    addHoverEffect("1");
-    addHoverEffect("2");
-    addHoverEffect("3");
-    addHoverEffect("4");
-    addHoverEffect("5");
-    addHoverEffect("6");
-    addHoverEffect("7");
-    addHoverEffect("8");
+    fadedHoverEffect("1");
+    fadedHoverEffect("2");
+    fadedHoverEffect("3");
+    fadedHoverEffect("4");
+    fadedHoverEffect("5");
+    fadedHoverEffect("6");
+    fadedHoverEffect("7");
+    fadedHoverEffect("8");
 
     $('form').submit(function(e) {
         var username = $("#name_edt").val();
@@ -58,7 +58,20 @@ var toggleElementVisibility = (elementId) => {
     $("#" + elementId).slideToggle();
 }
 
-// This fun will adde the hover effect to an image and display the text ontop of it
+// This fun will add the fade effect to the hover, so that the user knows which item he's selected 
+var fadedHoverEffect = (imageNum) => {
+    var overlayText = document.getElementById("overlay" + imageNum);
+    $("#portfolio_project_img_" + imageNum).hover(() => {
+        $("#portfolio_project_img_" + imageNum).animate({opacity: "0.4"});
+        overlayText.style.visibility = "visible";
+    },() => {
+        $("#portfolio_project_img_" + imageNum).animate({opacity: "1"});
+        overlayText.style.visibility = "hidden";
+    })
+    
+}
+
+// This fun will add the hover effect to an image and display the text ontop of it
 var addHoverEffect = (imageNum) => {
     var overlayText = document.getElementById("overlay" + imageNum)
     $("#portfolio_project_img_" + imageNum).hover(() => {
