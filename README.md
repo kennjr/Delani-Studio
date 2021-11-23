@@ -2,7 +2,7 @@
 #### This is a website for the web dev firm Delani Studio, 11/21/2021
 #### By **Kennjr**
 ## Description
-This is a simple website for the web development company Delani Studio, they provide a variety of web development services from web design and development to product management. They've worked on some projects check them out on their official site https://github.com/kennjr/Delani-Studio.git
+This is a simple website for the web development company Delani Studio, they provide a variety of web development services from web design and development to product management. They've worked on some projects check them out on their official site https://kennjr.github.io/Delani-Studio/
 ## Setup/Installation Requirements
 * Clone the repo :{ git clone https://github.com/kennjr/Delani-Studio.git }
 * No server or dependencies needed to run the code.
